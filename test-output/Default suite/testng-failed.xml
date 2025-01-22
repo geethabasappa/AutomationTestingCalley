@@ -3,13 +3,13 @@
 <suite parallel="none" name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="CalleyTeamsFullSetup.CalleyAutomation.AgentPageTest">
+      <class name="CalleyTeamsFullSetup.CalleyAutomation.NewPageTest">
         <methods>
-          <include name="setUp"/>
-          <include name="addAgentsTo"/>
+          <include name="fullTest"/>
           <include name="tearDown"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- CalleyTeamsFullSetup.CalleyAutomation.AgentPageTest -->
+      </class> <!-- CalleyTeamsFullSetup.CalleyAutomation.NewPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

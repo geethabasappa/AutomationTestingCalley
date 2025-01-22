@@ -35,17 +35,13 @@ public class AgentPageTest extends BaseClass{
 	@Test(priority=1)
 	public void addAgentsTo() throws InterruptedException {
 		 agentPage.AddAgent();
-		agentPage.verifyAgentAdd();
+		 Assert.assertEquals("Agent Added Successfully!", agentPage.verifyAgentAdd());
+		 //agentPage.verifyAgentAdd();
 		agentPage.ok();
 	}
 	
 	
-//	@Test
-//	public  void validateAddSuccefully() {
-//           String message =agentPage.verifyAgentAdd();
-//		Assert.assertEquals("Agent Added Successfully!", messageof);
-//		agentPage.ok();
-//		}
+
 
 
 	@AfterMethod

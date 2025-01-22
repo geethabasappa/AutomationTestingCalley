@@ -26,7 +26,10 @@ public class RegistrationTest  extends BaseClass{
 	
 	@Test
 	public void registration() throws InterruptedException {
-		dashboardPage =  registrationPage.registrationPageCreation( prop.getProperty("username"), prop.getProperty("email"),  prop.getProperty("password"));
+		dashboardPage =  registrationPage.registrationPageCreation();
+		registrationPage.freeTrialCall();
+		
+		
 	}
 	
 	@AfterMethod

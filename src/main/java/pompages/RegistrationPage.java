@@ -20,7 +20,7 @@ public class RegistrationPage  extends BaseClass{
 	@FindBy(xpath="//input[@name='txtPassword']")
 	WebElement passwordfiled;
 	
-	@FindBy(id="//input[@class='form-control iti__tel-input']")
+	@FindBy(xpath="//input[@class='form-control iti__tel-input']")
 	WebElement mobilefiled;
 	
 	@FindBy(xpath="//span[@id='recaptcha-anchor']")
@@ -36,6 +36,12 @@ public class RegistrationPage  extends BaseClass{
 	@FindBy(xpath="//button[text() ='OK']")
 	WebElement ok;
 	
+	@FindBy(xpath="//a[@id='ancPop2']")
+	WebElement freeTrial;
+	
+	@FindBy(xpath="//inpu[type='submit']")
+	WebElement submitForFree;	
+	
 	
 	
 	public RegistrationPage() {
@@ -43,23 +49,28 @@ public class RegistrationPage  extends BaseClass{
 		PageFactory.initElements(driver, this);
 	}
 
-	public DashboardPage registrationPageCreation(String use, String emai,String pass) throws InterruptedException {
-		usernamefiled.sendKeys(use);
-		emailfiled.sendKeys(emai);
-		passwordfiled.sendKeys(pass);
+	public DashboardPage registrationPageCreation() throws InterruptedException {
+		usernamefiled.sendKeys("Renu");
+		emailfiled.sendKeys("renu@gmail.com");
+		passwordfiled.sendKeys("Renu@123");
 		mobilefiled.sendKeys("8904058620");
 	//	mobilefiled.sendKeys("8904058620");
 		Thread.sleep(20000);
 //		robotfiled.click();
 //		checkbox.click();
-//		signUp.click();
+		signUp.click();
 		Thread.sleep(10000);
 	//	Alert alert =driver.switchTo().alert();
 	//	alert.accept();
 		ok.click();
-		Thread.sleep(5000);
+		Thread.sleep(8000);
 		return new DashboardPage();
 		
+	}
+	public void freeTrialCall() throws InterruptedException {
+		Thread.sleep(4000);
+		freeTrial.click();
+		submitForFree.click();
 	}
 	
 }

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="CalleyTeamsFullSetup.CalleyAutomation.AgentPageTest"/>
+      <class name="CalleyTeamsFullSetup.CalleyAutomation.DashboardPageTest"/>
+      <class name="CalleyTeamsFullSetup.CalleyAutomation.MatchFilsPageTest"/>
+      <class name="CalleyTeamsFullSetup.CalleyAutomation.LoginPageTest"/>
+      <class name="CalleyTeamsFullSetup.CalleyAutomation.RegistrationTest"/>
+      <class name="CalleyTeamsFullSetup.CalleyAutomation.CallListPageTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -11,7 +11,7 @@ public class CallListPage  extends BaseClass{
 	@FindBy(xpath="//input[@placeholder='List Name']")
 	WebElement name;
 	
-	@FindBy(xpath="//button[@title='Please select an agent']")
+	@FindBy(xpath="//button[@title='Please select an agent']")////button[@type='button']
 	WebElement select;
 	
 	@FindBy(xpath="//input[@value='all']")
